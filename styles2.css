@@ -51,22 +51,17 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.portfolio h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2c3e50;
-}
-
-/* Projects Container - Two Columns */
-.projects-container {
+/* Projects Container - Using Flexbox */
+.projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1000px;
+    justify-content: space-between;
+    max-width: 100%;
     margin: auto;
+    gap: 20px; /* Adds spacing between projects */
 }
 
+/* Individual Project Box */
 .project {
     background: #ffffff;
     padding: 25px;
@@ -74,8 +69,9 @@ header nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
-    width: 95%; /* Adjusted width for two-column layout */
+    width: calc(50% - 10px); /* Ensures two projects per row */
     margin-bottom: 20px;
+    box-sizing: border-box; /* Prevents padding from affecting width */
 }
 
 .project:hover {
@@ -83,10 +79,10 @@ header nav ul li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.project h3 a {
+    text-decoration: none;
     color: #007BFF;
+    font-size: 20px;
 }
 
 .project p {
@@ -94,17 +90,29 @@ header nav ul li a:hover {
     font-size: 16px;
 }
 
-.project a {
+.project .btn {
     display: inline-block;
     margin-top: 15px;
-    color: #007BFF;  
-    text-decoration: none;  
-    font-weight: bold;  
-    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
-.project a:hover {
-    color: #f39c12; 
+.project .btn:hover {
+    background-color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .projects {
+        flex-direction: column; /* Stack projects in one column on smaller screens */
+    }
+    .project {
+        width: 100%; /* Full width for small screens */
+    }
 }
 
 /* Related Quiz Section */
