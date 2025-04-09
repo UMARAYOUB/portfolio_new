@@ -117,9 +117,9 @@ header nav ul li a:hover {
 }
 
 .achievements-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    max-width: 800px; /* Set to your desired maximum width */
+    margin: 0 auto;   /* Centers the container */
+    padding: 20px;    /* Adds some spacing around the content */
 }
 
 .achievement {
@@ -138,11 +138,11 @@ header nav ul li a:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.achievement img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.achievement-img {
+    max-width: 100%; /* Ensures the image is not wider than its container */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Removes any extra space below the image */
+    margin: 0 auto;  /* Centers the image horizontally */
 }
 
 .achievement h3 {
