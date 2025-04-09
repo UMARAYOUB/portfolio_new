@@ -117,9 +117,9 @@ header nav ul li a:hover {
 }
 
 .achievements-container {
-    max-width: 800px; /* Set to your desired maximum width */
-    margin: 0 auto;   /* Centers the container */
-    padding: 20px;    /* Adds some spacing around the content */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .achievement {
@@ -139,10 +139,10 @@ header nav ul li a:hover {
 }
 
 .achievement-img {
-    max-width: 100%; /* Ensures the image is not wider than its container */
-    height: auto;    /* Maintains the aspect ratio */
-    display: block;  /* Removes any extra space below the image */
-    margin: 0 auto;  /* Centers the image horizontally */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .achievement h3 {
@@ -210,41 +210,18 @@ header nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact form input, .contact form textarea {
-    width: 50%;
-    padding: 14px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.contact form input:focus, .contact form textarea:focus {
-    outline: none;
-    border: 1px solid #f59e0b;
-}
-
-.contact form button {
-    background-color: #f59e0b;
-    color: white;
-    padding: 14px 30px;
-    border: none;
-    border-radius: 8px;
+.contact p {
     font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
+    margin-bottom: 10px;
 }
 
-.contact form button:hover {
-    background-color: #d97706;
-    transform: translateY(-3px);
+.contact a {
+    color: #f59e0b;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    color: #d97706;
 }
 
 /* Footer */
