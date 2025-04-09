@@ -40,6 +40,68 @@
             <img src="Umar Ayoub.jpeg" alt="Umar Ayoub">
         </div>
     </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Ayoub - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Umar Ayoub</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="intro">
+            <h1>Hi, I am Umar Ayoub</h1>
+            <p>Passionate Developer | AI Enthusiast | Innovator</p>
+            <p>A passionate developer with a love for AI, Machine Learning, and technology. I thrive on solving real-world problems through smart, data-driven solutions and innovative ideas. With a strong background in programming and AI, I enjoy building intelligent systems, optimizing models, and exploring new technologies. For me, coding is about creating meaningful solutions that make an impact. Let’s connect and innovate together!</p>
+            <div>
+                <button class="hire-btn" onclick="sendEmail()">HIRE ME</button>
+                <button class="hire-btn2" onclick="openResume()">RESUME</button>
+            </div>
+            
+            <script>
+                function sendEmail() {
+                    window.location.href = "mailto:uayoub181003@gmail.com?subject=Hiring%20Inquiry&body=Hello,%20I%20am%20interested%20in%20hiring%20you!";
+                }
+            
+                function openResume() {
+                    window.open('Umar_Ayoub_Resume.pdf', '_blank'); // Ensure the resume file is in the correct path
+                }
+            </script>
+        </div>
+        <div class="profile-pic">
+            <img src="Umar Ayoub.jpeg" alt="Umar Ayoub">
+        </div>
+    </section>
+
+    <!-- <section id="portfolios" class="portfolios">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1: Movie Recommendation System</h3>
+                <p>A system that recommends movies based on user preferences.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Diabetes Prediction System</h3>
+                <p>A predictive system for diabetes risk assessment.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: Emotion Detection</h3>
+                <p>A system that detects emotions from text or images.</p>
+            </div>
+        </div>
+    </section> -->
 
     <section id="portfolios" class="portfolios">
         <h2>Portfolio</h2>
@@ -66,6 +128,35 @@
             </div>
         </div>
     </section>
+
+    <section id="achievements" class="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievement">
+                <img src="achievment1.jpg" alt="Speed Programming Champion" class="achievement-img">
+                <h3>Speed Programming Champion - Annual Tech Competition 2025</h3>
+                <p>I secured 1st place in the Speed Programming competition at the Annual Tech Competition 2025, hosted by UET Mardan. As part of Team USI (Umar Ayoub, Muhammad Ismail, and Saad Ali Shah), we demonstrated exceptional problem-solving skills under time constraints.</p>
+            </div>
+            <div class="achievement">
+                <img src="achievment 2.jpg" alt="8-Week Coding Internship" class="achievement-img">
+                <h3>8-Week Online Coding Internship - AICP</h3>
+                <p>I completed an 8-week online coding internship with AICP, enhancing my problem-solving and coding skills. The internship provided hands-on experience in programming, allowing me to tackle real-world challenges and improve my analytical thinking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p style="font-size: 18px; margin-bottom: 10px;">📞 Phone: <a href="tel:+923434810063" style="color: #ecf0f1; text-decoration: underline;">+92 300 1234567</a></p>
+        <p style="font-size: 18px;">✉️ Email: <a href="mailto:uayoub181003@gmail.com" style="color: #ecf0f1; text-decoration: underline;">uayoub181003@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Umar Ayoub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
 
     <section id="achievements" class="achievements">
         <h2>Achievements</h2>
