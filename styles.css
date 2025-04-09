@@ -1,27 +1,29 @@
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
 }
 
 /* Header */
 header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #1f2937;
+    color: #ffffff;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 header nav ul {
@@ -36,14 +38,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ecf0f1;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
-    color: #e67e22;
+    color: #f59e0b;
 }
 
 /* Hero Section */
@@ -51,8 +53,8 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
-    background: white;
+    padding: 80px;
+    background: #ffffff;
 }
 
 .hero .intro {
@@ -60,72 +62,106 @@ header nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 38px;
-    color: #007BFF;
+    font-size: 42px;
+    color: #1e40af;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #555;
 }
 
-.hire-btn {
-    padding: 12px 50px;
-    background-color: #007BFF;
-    color: white;
+.btn {
+    padding: 14px 50px;
+    background-color: #2563eb;
+    color: rgb(29, 19, 140);
     border: none;
     cursor: pointer;
     font-size: 18px;
-    border-radius: 6px;
+    font-weight: 600;
+    border-radius: 8px;
     transition: all 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hire-btn:hover {
-    background-color: #0056b3;
+.btn:hover {
+    background-color: #1e3a8a;
     transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
-
-.hire-btn2 {
-    padding: 12px 50px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 6px;
-    transition: all 0.3s;
-    margin-left: 100px;
-}
-
-.hire-btn2:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
-}
-
-
-
 
 .profile-pic img {
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 420px;
     border-left: 80px solid white;
     margin-top: -30px;
-    border-radius: 10px;
+    border-radius: 12px;
     transform: scaleX(-1);
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 70px 10px;
+    text-align: center;
+    background: #f3f4f6;
+}
+
+.achievements h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievement {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.achievement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.achievement img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.achievement h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 /* Portfolio Section */
 .portfolios {
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
-    background: #E6F3FE;
+    background: #e0f2fe;
 }
 
 .portfolios h2 {
-    font-size: 36px;
+    font-size: 38px;
     margin-bottom: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .projects {
@@ -135,11 +171,11 @@ header nav ul li a:hover {
 }
 
 .project {
-    background-color: #fff;
-    padding: 25px;
+    background-color: #ffffff;
+    padding: 30px;
     margin: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 30%;
     transition: transform 0.3s ease-in-out;
 }
@@ -151,20 +187,26 @@ header nav ul li a:hover {
 
 .project h3 {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
+}
+
+.project h3 a {
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 20px;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #2c3e50;
+    background-color: #1f2937;
     color: white;
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
 .contact h2 {
-    font-size: 34px;
+    font-size: 36px;
     margin-bottom: 40px;
 }
 
@@ -176,55 +218,72 @@ header nav ul li a:hover {
 
 .contact form input, .contact form textarea {
     width: 50%;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 20px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 16px;
 }
 
 .contact form input:focus, .contact form textarea:focus {
     outline: none;
-    border: 1px solid #e67e22;
+    border: 1px solid #f59e0b;
 }
 
 .contact form button {
-    background-color: #e67e22;
+    background-color: #f59e0b;
     color: white;
-    padding: 12px 25px;
+    padding: 14px 30px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .contact form button:hover {
-    background-color: #d35400;
+    background-color: #d97706;
     transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #1f2937;
     color: #ecf0f1;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 25px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .projects {
+    .projects, .achievements-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .project {
-        width: 80%;
+    .project, .achievement {
+        width: 85%;
     }
 
     .contact form input, .contact form textarea {
         width: 90%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .intro {
+        max-width: 100%;
+    }
+
+    .profile-pic img {
+        width: 280px;
+        height: auto;
+        margin-top: 20px;
     }
 }
